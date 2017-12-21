@@ -1,5 +1,5 @@
-import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-seller-info',
@@ -13,7 +13,7 @@ export class SellerInfoComponent implements OnInit {
   constructor(private routeInfo: ActivatedRoute) { }
 
   ngOnInit() {
-    this.sellerId = this.routeInfo.snapshot.params['id'];
+    this.sellerId = this.routeInfo.snapshot.params["id"];
   }
 
 }
