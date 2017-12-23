@@ -5,10 +5,12 @@ import { ProductComponent } from './product/product.component';
 import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ChatComponent } from './chat/chat.component';
 
 // 路由中path不能以斜线开头
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'chat', component: ChatComponent, outlet: 'aux' },
   { path: 'home', component: HomeComponent },
   {
     path: 'product/:id', component: ProductComponent,
